@@ -1,0 +1,34 @@
+{
+    "name": "loki",
+    "version": "1.0.0",
+    "description": "Local DB with lowDB library",
+    "main": "src/index.js",
+    "scripts": {
+        "dev": "nodemon --trace-warnings ./src/index.js --ignore dbUser.json --ignore dbIntent.json",
+        "start": "node ./src/index.js --ignore dbUser.json --ignore dbIntent.json"
+    },
+    "author": "Ricardo Alvarez Nilo",
+    "license": "MIT",
+    "dependencies": {
+        "app-root-path": "^3.1.0",
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "csurf": "^1.11.0",
+        "dotenv": "^16.0.2",
+        "express": "^4.18.1",
+        "express-list-endpoints": "^6.0.0",
+        "express-rate-limit": "^6.6.0",
+        "express-requests-logger": "^3.0.4",
+        "express-validator": "^6.14.2",
+        "fast-deep-equal": "^3.1.3",
+        "fs-extra": "^10.1.0",
+        "helmet": "^6.0.0",
+        "lokijs": "^1.5.12",
+        "morgan": "^1.10.0",
+        "uuid": "^9.0.0",
+        "winston": "^3.8.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    }
+}
